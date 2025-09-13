@@ -7,7 +7,7 @@ const MovieSearch = () => {
   const fetchMovies = async (searchQuery) => {
     if (searchQuery) {
       const response = await fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=8118e05b58d706b38c045d3dcf1df26a&query=${searchQuery}`
+        `API link here=${searchQuery}`
       );
       const data = await response.json();
       setMovies(data.results);
